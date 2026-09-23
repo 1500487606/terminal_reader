@@ -1,0 +1,11 @@
+# 统一行尾：仓库里一律存 LF，检出时按平台还原
+* text=auto eol=lf
+
+# 批处理脚本必须留 CRLF（少数环境下 LF 的 .bat 会被 exec 出错）
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制文件不要做行尾转换
+*.exe binary
+*.png binary
+*.ico binary

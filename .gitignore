@@ -1,0 +1,29 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- PyInstaller 打包产物 ----
+# dist/ 里是约 7 MB 的单文件 exe，默认不进仓库（成品走 GitHub Releases 发附件），
+# 免得每次重新打包都往历史里塞一大坨二进制。
+# 若确实想让 clone 下来就有 exe，注释掉下面 dist/ 这行再提交。
+dist/
+build/
+
+# ---- 运行时状态 ----
+# 实际写在用户主目录(~/.terminal_reader_state.json)，这里只是兜底
+.terminal_reader_state.json
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+
+# ---- 你自己的书 ----
+# 建议把私人小说单独放一个目录并在这里忽略，别一起传上来
+# books/
+# novels/
